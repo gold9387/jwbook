@@ -1,0 +1,29 @@
+package ch12;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.core.MediaType;
+
+import ch10.NewsDAO;
+
+@Path("/news")
+public class NewsApiService {
+	NewsDAO dao;
+	
+	public NewsApiService() {
+		dao = new NewsDAO();
+	}
+	
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	public String addNews(News news) {
+		try {
+			dao.addNews(news);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "News API: 뉴스 등록 실패!";
+		}
+	}
+
+}

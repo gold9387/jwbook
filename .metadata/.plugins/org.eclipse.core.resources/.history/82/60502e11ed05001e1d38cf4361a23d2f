@@ -1,0 +1,6 @@
+package com.example.demo;
+
+public class Snippet {
+	Servlet.service() for servlet [jsp] threw exception
+}
+

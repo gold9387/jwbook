@@ -1,0 +1,13 @@
+package ch09;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class StudentDAO {
+	Connection conn = null;
+	PreparedStatement pstmt;
+	
+	final String JDBC_DRIVER = "org.h2.Driver";
+	final String JDBC_URL = "jdbc:h2:tcp://localhost/~/db/jwbookdb";
+
+}

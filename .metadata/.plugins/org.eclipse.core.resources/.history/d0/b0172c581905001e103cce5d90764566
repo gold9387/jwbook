@@ -1,0 +1,8 @@
+package ch12;
+
+import javax.ws.rs.ApplicationPath;
+
+@ApplicationPath("/api")
+public class RestConfig {
+
+}

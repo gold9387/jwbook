@@ -1,0 +1,10 @@
+package ch09;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class StudentDAO {
+	Connection conn = null;
+	PreparedStatement pstmt;
+
+}
