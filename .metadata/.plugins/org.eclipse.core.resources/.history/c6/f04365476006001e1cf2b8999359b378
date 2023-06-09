@@ -1,0 +1,18 @@
+package com.example.news;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/news")
+public class NewsApiController {
+	
+	final NewsDAO dao;
+
+	public NewsApiController(NewsDAO dao) {
+		this.dao = dao;
+	}
+	
+	
+
+}
